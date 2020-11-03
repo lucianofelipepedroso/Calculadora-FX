@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="269.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" 
+	fx:controller="br.luciano.felipe.calculadora.controller.Controller">
+   <children>
+   
+      <Button layoutX="13.0" layoutY="223.0" mnemonicParsing="false" prefHeight="12.0" prefWidth="162.0" text="0" onAction="#onNumber"/>
+      <Button layoutX="13.0" layoutY="179.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="1" onAction="#onNumber"/>
+      <Button layoutX="99.0" layoutY="179.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="2" onAction="#onNumber"/>
+      <Button layoutX="184.0" layoutY="179.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="3" onAction="#onNumber"/>
+      
+        
+      <Button layoutX="13.0" layoutY="137.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="4" onAction="#onNumber"/>  
+      <Button layoutX="99.0" layoutY="137.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="5" onAction="#onNumber"/>
+      <Button layoutX="184.0" layoutY="137.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="6" onAction="#onNumber"/>
+      <Button layoutX="13.0" layoutY="94.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="7" onAction="#onNumber"/>
+      <Button layoutX="99.0" layoutY="94.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="8" onAction="#onNumber"/>
+      <Button layoutX="184.0" layoutY="94.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="9" onAction="#onNumber"/>
+        
+     
+      <Button styleClass="opButton" layoutX="184.0" layoutY="223.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="," onAction="#onComma"/>
+      <Button styleClass="opButton" layoutX="271.0" layoutY="223.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="=" onAction="#onOperation"/>
+      <Button styleClass="opButton" layoutX="271.0" layoutY="179.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="-" onAction="#onOperation"/>
+      <Button styleClass="opButton" layoutX="271.0" layoutY="137.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="/" onAction="#onOperation"/>
+      <Button styleClass="opButton"  layoutX="355.0" layoutY="179.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="78.0" text="+" onAction="#onOperation"/>
+      <Button styleClass="opButton" layoutX="355.0" layoutY="137.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="*" onAction="#onOperation"/>
+    
+      <Button styleClass="opC"  layoutX="271.0" layoutY="94.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="CE" onAction="#onClear"/>
+      <Button styleClass="opButton" layoutX="355.0" layoutY="94.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="C" onAction="#onClear"/>
+      
+  
+      <StackPane layoutX="5.0" layoutY="7.0" prefHeight="79.0" prefWidth="435.0">
+         <children>
+            <Label fx:id="lblError" alignment="TOP_LEFT" prefHeight="67.0" prefWidth="426.0" text="E" visible="false"/>
+            <Label fx:id="lblResult" alignment="CENTER_RIGHT" prefHeight="64.0" prefWidth="422.0" text="0"/>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

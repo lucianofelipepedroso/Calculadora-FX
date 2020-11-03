@@ -1,0 +1,32 @@
+#lblResult {
+	-fx-font-size: 29px;
+	-fx-font-weight: bold;
+	-fx-background-color: white;
+}
+
+
+#lblError{
+	
+	-fx-text-fill:red;
+	-fx-font-weight:bold;
+}
+
+.button {
+	
+	-fx-text-fill:blue;
+	-fx-font-size:17px;
+	
+}
+
+.opButton{
+	
+	-fx-text-fill:black;
+	-fx-font-weight:bold;
+	
+}
+
+.opC{
+	-fx-text-fill: red;
+	-fx-font-weight:bold;
+	
+}
